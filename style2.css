@@ -1,0 +1,96 @@
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('/Users/gulnazzhaiylgan/Library/Mobile Documents/com~apple~CloudDocs/html/final1/фон.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+  }
+
+  
+  #quiz-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 450px;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    color: #2c2c2c;
+    font-size: 45px;
+  }
+  
+  #question {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  #choices-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #choicesContainer.inner.HTML {
+    text-align: center;
+    font-size: 30px;
+    color: #68020c;
+  }
+  
+  .choice-image {
+    width: 160px;
+    height: 160px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  
+  .choice-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .choice-image.correct {
+    border-color: #28a745;
+  }
+  
+  .choice-image.incorrect {
+    border-color: #dc3545;
+  }
+  
+  #next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffc800;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #score-container {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
